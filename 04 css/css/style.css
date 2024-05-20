@@ -1,0 +1,139 @@
+/*기본 셋팅 값 : reset*/
+/* Mobile */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: -0.4px;
+    line-height: 1.5;
+    font-size: 16px; /* chrome 브아루저의 폰트 사이즈 기본값은 16px */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Desktop */
+@media only screen and (min-width: 600px;) {
+    * {
+        font-size: 16px;
+    }
+}
+
+/* header */
+#header {
+    /* background-color: #adc5e6; */
+    background-color: rgb(173, 197, 230, 0.5);
+    color: purple;
+}
+#header #logo a {
+    display: block;
+    width: 200px;
+    color: lightcoral;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.875em; /* 30px */
+}
+#header #logo a img {
+    vertical-align: middle;
+    margin-top: -5px;
+}
+#header #logo a::before {
+    content: '\f6d5';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+/* nav */
+/*.gnb > ul > li {
+    border: 1px solid green;
+}*/
+
+.gnb .depth1 > li {
+    border: 1px solid black;
+} /*바로 아래 자식만 잡고싶은 경우*/
+.gnb .depth1 > li > a {
+    font-size: 1.25em; /* 20px */
+}
+.gnb .depth2 {
+    display: none;
+}
+.gnb .depth2 li {
+    border: 1px solid blue;
+}
+.depth1 > li > a::before {
+    content: '\f101';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+/* util */
+.util .btn_menu {
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+.util .btn_menu:hover {
+    background-color: aqua;
+    color: #333;
+}
+/* .util .btn-menu:disabled {
+    background-color: aqua;
+} */
+
+/* main */
+main {
+    background-color: lightpink;
+}
+.main_intro {
+    border: 1px solid red;
+}
+
+.bg_yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+/* footer */
+.corp_area .list_corp li:first-child {
+    border: 1px solid lightsalmon;
+}
+.corp_area .list_corp li:nth-child(2) {
+    border: 1px solid green;
+}
+.corp_area .list_corp li:last-child {
+    border: 1px solid lightsalmon;
+}
+.corp_area .list_corp li:nth-last-child(2) {
+    border: 1px solid purple;
+}
+.corp_area li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: #333;
+}
+.corp_area li:first-child::before {
+    display: none;
+}
+.corp_area li::after {
+    content: '';
+}
+.corp_area a::before {
+    content: '==';
+}
+.corp_area a::after {
+    content: '>>';
+}
+.corp_area .list_corp {
+    display: flex;
+}
+
+.form_search .inp_search {
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightcoral;
+}
+.form_search .inp_search:focus {
+    background-color: lightskyblue;
+}

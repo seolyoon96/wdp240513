@@ -44,6 +44,146 @@
     <!--페이지 설정-->
 
     <body>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" />
+        </video>
+        <!--미디어 태그-->
+        <!--비디오 태그-->
+        <!--controls는 재생, 일시중지, 볼륨과 같은 비디오 컨트롤을 추가할 수 있음-->
+        <!--autoplay muted 음소거-->
+
+        <br />
+
+        <iframe
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&autoplay=1&mute=1&loop=1"
+        >
+        </iframe>
+
+        <br />
+
+        <form action="">
+            <fieldset>
+                <legend>폼 캡션</legend>
+
+                <label for="name">이름</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    autocomplete="on"
+                    value="윤설"
+                    placeholder="입력하세요"
+                />
+                <!--text-->
+
+                <label for="password">비밀번호</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    placeholder="문자, 숫자, 특수 문자 포함 10자 이상"
+                />
+                <!--password-->
+
+                <br />
+
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email" required placeholder="mail@mail.com" />
+                <!--email-->
+
+                <br />
+
+                <label for="number">숫자</label>
+                <input type="number" name="number" id="number" />
+                <!--number-->
+
+                <br />
+
+                <label for="search">검색</label>
+                <input type="search" name="search" id="search" maxlength="4" />
+                <!--search-->
+
+                <br />
+
+                <label for="tel">휴대폰 번호</label>
+                <input type="tel" name="tel" id="tel" value="010-0000-0000" readonly />
+                <!--tel-->
+                <!--readonly 수정할 수 없게 만들어주는 것-->
+
+                <br />
+
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" disabled />
+                <!--url-->
+                <!--disabled 비활성화 상태-->
+
+                <br />
+
+                <label for="file">파일</label>
+                <input type="file" name="file" id="file" />
+                <!--file-->
+
+                <br />
+
+                <input type="radio" name="color" id="red" />
+                <label for="red">red</label>
+
+                <input type="radio" name="color" id="blue" />
+                <label for="blue">blue</label>
+
+                <input type="radio" name="color" id="green" />
+                <label for="green">green</label>
+                <!--radio-->
+
+                <br />
+
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree">동의합니다</label>
+                <!--checkbox-->
+
+                <br />
+
+                <label for="fruit">선호하는 과일</label>
+                <select name="fruit" id="fruit">
+                    <option value="apple">apple</option>
+                    <option value="melon">melon</option>
+                    <option value="banana">banana</option>
+                </select>
+                <!--select box-->
+
+                <br /><br />
+
+                <label for="message">메세지</label>
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                <!--textarea-->
+
+                <br /><br />
+
+                <button>검색</button>
+                <!--button-->
+                <!--js (동적인)액션이 나와야됨-->
+                <a href="#">링크</a>
+                <!--단순 링크 표시-->
+
+                <br />
+
+                <input type="reset" value="취소" />
+
+                <input type="submit" value="제출" />
+                <!--submit-->
+
+                <br />
+
+                <input type="button" value="버튼" />
+                <!--button-->
+            </fieldset>
+        </form>
+        <!--input 태그-->
+
         <picture>
             <source media="(max-width: 600px)" srcset="./images/img_smallflower.jpg" />
             <!--600px 이하-->
