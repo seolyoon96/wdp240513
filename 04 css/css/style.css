@@ -8,6 +8,7 @@
     line-height: 1.5;
     font-size: 16px; /* chrome 브아루저의 폰트 사이즈 기본값은 16px */
     font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Desktop */

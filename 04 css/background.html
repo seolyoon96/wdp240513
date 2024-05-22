@@ -8,7 +8,6 @@
     <body>
         <h1>background</h1>
         <h2>background_color</h2>
-
         <div class="bg1">background_color</div>
 
         <style>
@@ -36,6 +35,57 @@
                 background-repeat: no-repeat; /* 이미지 반복 안되게 */
                 background-position: 50% 50%; /* 배경이미지 중앙으로 이동 */
                 background-size: 200px auto; /* 이미지 찌그러뜨리면 안되서 이처럼 x축 값을 따라 y축 값을 auto로 하여 같이 따라갈 수 있도록 */
+            }
+        </style>
+
+        <br /><br />
+
+        <h2>background_size</h2>
+        <a href="#" class="box2">라이트 모드로 보기</a>
+
+        <style>
+            .box2 {
+                display: block;
+                width: 182px;
+                height: 90px;
+                text-indent: -9999px; /* 텍스트를 화면 밖으로 밀어버려서 안보이게 하는 방법 */
+                background-image: url('./images/btn.png');
+                background-size: contain; /* contain은 이미지가 잘리지않고 다 보이게 해주는 방법(로고 둥 사용) */
+                background-repeat: no-repeat;
+            }
+        </style>
+
+        <a href="#" class="box3">라이트 모드로 보기</a>
+
+        <style>
+            .box3 {
+                display: block;
+                width: 182px;
+                height: 90px;
+                text-indent: -9999px;
+                background: #eee url('./images/btn.png') no-repeat 0 0 / cover;
+                /* background-image: url('./images/btn.png');
+                background-size: cover;
+                background-repeat: no-repeat; 단축 속성 : 배치 순서 중요*/
+            }
+        </style>
+
+        <h2>sprite_image</h2>
+        <div class="sp1"></div>
+        <div class="sp2"></div>
+
+        <style>
+            .sp1 {
+                width: 140px;
+                height: 135px;
+                background-image: url('./images/sprite0521.png');
+                background-repeat: no-repeat;
+            }
+
+            .sp2 {
+                width: 75px;
+                height: 65px;
+                background: url('./images/sprite0521.png') no-repeat -409px -209px;
             }
         </style>
     </body>

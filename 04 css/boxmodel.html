@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>boxmodel</title>
+    </head>
+    <body>
+        <h1>boxmodel</h1>
+        <h2>width & height</h2>
+        <div class="box1"></div>
+        <div class="box1-1">100% & 100vh</div>
+
+        <style>
+            .box1 {
+                /* width: auto(100%); 기본값 */
+                /* width: 50%; */
+                /* height: auto(0); 기본값 */
+                height: 200px;
+                background: #adbee6;
+            }
+
+            .box1-1 {
+                width: 100%;
+                height: 100vh;
+                background: #f4f0ad;
+            }
+        </style>
+
+        <h2>max-width</h2>
+        <div class="box2"></div>
+
+        <style>
+            .box2 {
+                max-width: 1280px; /* max-width : none; 기본값 */
+                min-width: 360px; /* min-width : 0; 기본값 */
+                width: 100%;
+                height: 200px;
+                background: #ee9d9d;
+                margin: 0 auto;
+            }
+        </style>
+
+        <h2>margin</h2>
+        <div class="box3"></div>
+        <div class="box3"></div>
+
+        <style>
+            .box3 {
+                width: 300px;
+                height: 200px;
+                background: #aee6ad;
+
+                /* margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 400px; */
+                margin: 100px auto 400px;
+            }
+
+            .box3 {
+                width: 300px;
+                height: 200px;
+                background: #aee6ad;
+
+                /* margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 400px; */
+                margin: 100px auto 50px;
+            }
+        </style>
+
+        <h2>padding</h2>
+        <div class="box4">menu01</div>
+        <div class="box5">menu02</div>
+        <div class="box6">menu03</div>
+
+        <style>
+            .box4 {
+                display: inline-block; /* width 값이 100%로 들어가지 않게 하는 방법 */
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                background: #c9ade6;
+            }
+
+            .box5 {
+                display: inline-block;
+                padding: 10px 25px;
+                background: #adf4e7;
+            }
+
+            .box6 {
+                display: inline-block;
+                padding: 10px 30px 20px 40px;
+                background: #f4ade0;
+            }
+        </style>
+    </body>
+</html>
