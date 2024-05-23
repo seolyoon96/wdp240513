@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    list-style: none;
+}
+
+#wrap {
+    width: 100%;
+    /* block요소, 자기자신을 가운데 정렬하고 싶을 때 */
+    margin: 0 auto;
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+/* header */
+header{display: flex;flex-direction: column;width: 200px;height: 700px; background: #f0f0f0;}
+header h1 {display: flex;}
+header h1 a {display: flex;align-items: center;}
+
+header nav {display: flex;}
+
+
+footer{display: flex;}

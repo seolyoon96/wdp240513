@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>float</title>
+
+    <style>
+        #wrap{width: 1200px;margin: 0 auto;}
+
+        header{
+            /* clearfix하는 방법 */
+            /* overflow: hidden; */
+            /* height: 100px; */
+            background-color: #8cbcec;}
+        header::after{content: '';clear: both;display: block;}
+        header h1{float: left;}
+        header nav{float: right;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>logo</h1>
+
+            <nav>gnb</nav>
+        </header>
+        <!-- header -->
+
+        <main class="content">
+            <section>공지사항</section>
+            <section>배너</section>
+            <section>바로가기</section>
+        </main>
+        <!-- main -->
+
+        <footer></footer>
+        <!-- footer -->
+    </div>
+</body>
+</html>
