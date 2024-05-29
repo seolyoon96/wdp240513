@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+</head>
+<body>
+    <h1>overflow</h1>
+
+    <h2>visible</h2>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat magni sequi velit delectus animi reiciendis, fugiat tenetur porro fuga cumque at labore quia id. Et totam excepturi assumenda dolorem pariatur consequatur dicta commodi voluptas vitae qui. Autem eligendi excepturi aliquid ipsam obcaecati? Adipisci repellendus cumque a aliquid voluptatum aspernatur!</div>
+
+    <style>
+        .box{width: 200px;height: 200px;background: #eee;}
+    </style>
+
+    <br><br><br><br>
+
+    <h2>hidden</h2>
+    <div class="box hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat magni sequi velit delectus animi reiciendis, fugiat tenetur porro fuga cumque at labore quia id. Et totam excepturi assumenda dolorem pariatur consequatur dicta commodi voluptas vitae qui. Autem eligendi excepturi aliquid ipsam obcaecati? Adipisci repellendus cumque a aliquid voluptatum aspernatur!</div>
+
+    <style>
+        .box{width: 200px;height: 200px;background: #eee;}
+        .hidden{overflow: hidden;}
+    </style>
+    
+    <br><br>
+
+    <h2>scroll</h2>
+    <div class="box scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat magni sequi velit delectus animi reiciendis, fugiat tenetur porro fuga cumque at labore quia id. Et totam excepturi assumenda dolorem pariatur consequatur dicta commodi voluptas vitae qui. Autem eligendi excepturi aliquid ipsam obcaecati? Adipisci repellendus cumque a aliquid voluptatum aspernatur!</div>
+
+    <style>
+        .box{width: 200px;height: 200px;background: #eee;}
+        .scroll{overflow: scroll;}
+    </style>
+
+    <br><br>
+
+    <h2>auto</h2>
+    <div class="box auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat magni sequi velit delectus animi reiciendis, fugiat tenetur porro fuga cumque at labore quia id.!</div>
+
+    <style>
+        .box{width: 200px;height: 200px;background: #eee;}
+        .auto{overflow: auto;}
+    </style>
+
+    <h2>auto</h2>
+    <div class="box auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat magni sequi velit delectus animi reiciendis, fugiat tenetur porro fuga cumque at labore quia id. Et totam excepturi assumenda dolorem pariatur consequatur dicta commodi voluptas vitae qui. Autem eligendi excepturi aliquid ipsam obcaecati? Adipisci repellendus cumque a aliquid voluptatum aspernatur!</div>
+
+    <style>
+        .box{width: 200px;height: 200px;background: #eee;}
+        .auto{overflow: auto;}
+    </style>
+</body>
+</html>

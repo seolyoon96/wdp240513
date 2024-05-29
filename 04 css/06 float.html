@@ -17,6 +17,12 @@
         header::after{content: '';clear: both;display: block;}
         header h1{float: left;}
         header nav{float: right;}
+
+        /* .content{display: flex;justify-content: space-between;} */
+        main{overflow: hidden;background: #eee;}
+        main section{float: left;width: 32%;margin-right: 2%;}
+        /* 32% x 3 = 96%라 4%로 남으니 margin으로 계산 */
+        main section:last-child{margin-right: 0;}
     </style>
 </head>
 <body>
@@ -35,7 +41,9 @@
         </main>
         <!-- main -->
 
-        <footer></footer>
+        <footer>
+            <P>footer</P>
+        </footer>
         <!-- footer -->
     </div>
 </body>
