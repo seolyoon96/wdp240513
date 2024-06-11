@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>interactive</title>
+</head>
+<body>
+  <h1>인터렉티브</h1>
+  
+  <h2>transform</h2>
+  <style>
+    h2{margin-bottom: 70px;}
+  </style>
+  <!-- h2 -->
+
+  <div class="box">
+    <div class="t1"></div>
+  </div>
+  <style>
+    .box div{transition: all 3s;}
+    .box{width: 200px;height: 200px;background: #eee;margin: 0 auto;}
+    .t1{width: 200px;height: 200px;background: #97bceb;}
+
+    .t1:hover{transform: translate(50px, -50px);background: #df99f3;}
+  </style>
+  <!-- box -->
+
+  <br><br><br><br><br>
+
+  <div class="box2">
+    <div class="t2"></div>
+  </div>
+  <style>
+    .box2{width: 200px;height: 200px;background: #eee;margin: 0 auto;}
+    .t2{width: 200px;height: 200px;background: #97bceb;}
+
+    .t2:hover{transform: rotate(45deg);}
+  </style>
+  <!-- box2 -->
+
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+
+  <div class="box3">
+    <div class="t3"></div>
+  </div>
+  <style>
+    .box3{width: 200px;height: 200px;background: #eee;margin: 0 auto;}
+    .t3{width: 200px;height: 200px;background: #97bceb;opacity: 0.5;}
+
+    .t3:hover{transform: scale(2);}
+  </style>
+  <!-- box3 -->
+
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+
+  <div class="box4">
+    <div class="t4"></div>
+  </div>
+  <style>
+    .box4{width: 200px;height: 200px;background: #eee;margin: 0 auto;}
+    .t4{width: 200px;height: 200px;background: #97bceb;}
+
+    .t4:hover{transform: skew(30deg);}
+  </style>
+  <!-- box4 -->
+</body>
+</html>

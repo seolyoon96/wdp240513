@@ -1,0 +1,40 @@
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  font-size: 50px;
+  color: #a9f68d;
+}
+
+.aos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #7fa9ec;
+  font-size: 30px;
+  color: #fff;
+}
+
+.aos .item1 {
+  opacity: 0;
+}
+
+.aos .item1.aos-animate {
+  opacity: 1;
+  background-color: #8ef5f5;
+  transform: scale(8);
+}
+
+.aos .item5 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  background: #b585e6;
+}/*# sourceMappingURL=scroll-aos.css.map */

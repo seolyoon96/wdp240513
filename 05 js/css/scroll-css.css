@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  perspective: 300px;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px;
+  border: 1px solid #eee;
+  background: #87cefa;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg);
+}
+
+.parallax {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  perspective: 1px;
+}
+.parallax div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  color: #fff;
+}
+.parallax .item1 {
+  height: 150rem;
+  background: #333;
+}
+.parallax .item2 {
+  top: 800px;
+  height: 500px;
+  background: #ff0066;
+  transform: translateZ(-2px);
+}
+.parallax .item3 {
+  top: 900px;
+  height: 500px;
+  background: #6775d8;
+  opacity: 0.5;
+  transform: translateZ(-1px);
+}/*# sourceMappingURL=scroll-css.css.map */
